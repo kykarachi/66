@@ -1,0 +1,158 @@
+/* Сброс базовых стилей */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 16px;
+    background: #faf9f7;
+    color: #333;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    line-height: 1.6;
+}
+
+/* Шапка */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f5f1ea;
+    padding: 10px 20px;
+    border-bottom: 2px solid #bfa87e;
+}
+
+header .logo img {
+    max-height: 50px;
+    width: auto;
+    height: auto;
+    display: block;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+    color: #bfa87e;
+}
+
+/* Основной контент */
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Общие стили заголовков */
+h1, h2, h3 {
+    font-family: "Georgia", serif;
+    color: #333;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #bfa87e;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #bfa87e;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #bfa87e;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Ссылки */
+a {
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #bfa87e;
+    cursor: pointer;
+}
+
+/* Стили для изображений */
+img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Футер */
+footer {
+    background: #f5f1ea;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    color: #666;
+    border-top: 2px solid #bfa87e;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .main-nav ul li {
+        margin-bottom: 10px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    html {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 1.3rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+}
